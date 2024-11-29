@@ -1,5 +1,9 @@
-local synversion = "Cucumber X"
+-- Synapse X Remake made by @chillz_azy (yt)
 
+local synversion = "cucumber!"
+
+-- this shit function makes my script fucked
+--[[pcall(function()
     local HttpService = game:GetService("HttpService")
     local response = game:HttpGet("https://api.whatexploitsare.online/status")
     local data = HttpService:JSONDecode(response)
@@ -11,18 +15,22 @@ local synversion = "Cucumber X"
     end
 end)]]
 
+-- Instances: 150 | Scripts: 8 | Modules: 4
 local G2L = {};
+-- StarterGui.SynapseX
 G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
 G2L["1"]["Name"] = [[SynapseX]];
 G2L["1"]["ResetOnSpawn"] = false;
 
+-- StarterGui.SynapseX.FloatingIcon
 G2L["2"] = Instance.new("ImageButton", G2L["1"]);
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(61, 61, 61);
 G2L["2"]["Size"] = UDim2.new(0, 36, 0, 36);
 G2L["2"]["Name"] = [[FloatingIcon]];
 G2L["2"].Visible = false
 G2L["2"]["Position"] = UDim2.new(0.7019911956787109, 0, 0.7092568278312683, 0);
- 
+
+-- StarterGui.SynapseX.FloatingIcon. 
 G2L["3"] = Instance.new("ImageLabel", G2L["2"]);
 G2L["3"]["BorderSizePixel"] = 0;
 G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -32,12 +40,15 @@ G2L["3"]["Name"] = [[ ]];
 G2L["3"]["BackgroundTransparency"] = 1;
 G2L["3"]["Position"] = UDim2.new(0.16640418767929077, 0, 0.13268542289733887, 0);
 
+-- StarterGui.SynapseX.FloatingIcon.UICorner
 G2L["4"] = Instance.new("UICorner", G2L["2"]);
 G2L["4"]["CornerRadius"] = UDim.new(1, 8);
 
+-- StarterGui.SynapseX.FloatingIcon.UIGradient
 G2L["5"] = Instance.new("UIGradient", G2L["2"]);
 G2L["5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.720, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
 
+-- StarterGui.SynapseX.Main
 G2L["6"] = Instance.new("Frame", G2L["1"]);
 G2L["6"]["Active"] = true;
 G2L["6"]["ZIndex"] = 4;
@@ -48,6 +59,7 @@ G2L["6"]["Size"] = UDim2.new(0, 646, 0, 283);
 G2L["6"]["Position"] = UDim2.new(0, 19, 0, 23);
 G2L["6"]["Name"] = [[Main]];
 
+-- StarterGui.SynapseX.Main.Icon
 G2L["7"] = Instance.new("ImageLabel", G2L["6"]);
 G2L["7"]["BorderSizePixel"] = 0;
 G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
